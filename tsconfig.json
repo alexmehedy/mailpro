@@ -16,7 +16,7 @@
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true,
 
-    "types": ["node"]       <-- যোগ করা হয়েছে
+    "types": ["node"]
   },
   "include": ["src", "**/*.ts", "**/*.tsx"],
   "exclude": ["vite.config.ts", "vite.config.d.ts", "node_modules"],
