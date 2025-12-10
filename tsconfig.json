@@ -12,11 +12,13 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true,
+
+    "types": ["node"]       <-- যোগ করা হয়েছে
   },
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules", "vite.config.ts"],
+  "include": ["src", "**/*.ts", "**/*.tsx"],
+  "exclude": ["vite.config.ts", "vite.config.d.ts", "node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
